@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CartPage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- header  -->
+
+    <div class="main">
+      <h3 class="heading">Gadget Zone</h3>
+    </div>
+    <div class="icon">
+      <i
+        class="fa-solid fa-magnifying-glass"
+        style="border-right: 1px dotted black; padding-right: 15px"
+      ></i>
+      <a href="/cart/index.html">
+        <i
+          class="fa-solid fa-cart-shopping cart-1"
+          style="padding-left: 15px"
+          data-count="3"
+        ></i>
+      </a>
+    </div>
+    <div class="nav">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <div class="Header_list">
+      <ul>
+        <li><a href="/Header.html">Home</a></li>
+        <li><a href="/productPage.html">Product</a></li>
+        <li><a href="/CheckOut.html">Cart</a></li>
+      </ul>
+    </div>
+
+    <!-- cart section  -->
+
+    <div class="cart">
+      <table>
+        <thead>
+          <tr>
+            <th>Items</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="product">
+              <img src="images/img-1.jpg" alt="Black Buds" />
+              <div class="product-name">
+                <span style="color: #ff6600 !important; cursor: pointer"
+                  >Black Buds</span
+                >
+                <span>$210.00</span>
+              </div>
+            </td>
+            <td>
+              <div class="quantity">
+                <button class="qult-btn">
+                  <span class="qult" style="margin-right: 20px">-</span> 1
+                  <span class="qult" style="margin-left: 20px">+</span>
+                </button>
+              </div>
+            </td>
+            <td data-label="Subtotal" style="padding-left: 10px !important">
+              $210.00
+            </td>
+            <td
+              style="
+                padding-left: 10px !important;
+                font-size: 20px;
+                cursor: pointer;
+              "
+            >
+              <i
+                style="color: rgb(255, 52, 52)"
+                class="fa-solid fa-trash-can-arrow-up del-btn"
+              ></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="product">
+              <img src="images/img-2.jpg" alt="Blue Ninja Headphone" />
+              <div class="product-name">
+                <span style="color: #ff6600 !important; cursor: pointer"
+                  >Blue Ninja Headphone</span
+                >
+                <span>$289.00</span>
+              </div>
+            </td>
+            <td>
+              <div class="quantity">
+                <button class="qult-btn">
+                  <span class="qult" style="margin-right: 20px">-</span> 1
+                  <span class="qult" style="margin-left: 20px">+</span>
+                </button>
+              </div>
+            </td>
+            <td data-label="Subtotal" style="padding-left: 10px !important">
+              $289.00
+            </td>
+            <td
+              style="
+                padding-left: 10px !important;
+                font-size: 20px;
+                cursor: pointer;
+              "
+            >
+              <i
+                style="color: rgb(255, 52, 52)"
+                class="fa-solid fa-trash-can-arrow-up del-btn"
+              ></i>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="actions">
+        <button class="btn-main">Continue Shopping</button>
+        <button><a href="/Saller.html">Checkout</a></button>
+      </div>
+    </div>
+
+    <!-- footer section  -->
+
+    <footer>
+      <div class="f-main">
+        <div class="footer-part1">
+          <h3>Payment Options</h3>
+          <div class="img">
+            <img src="images/footer-1.png" alt="" />
+            <img src="images/footer-2.png" alt="" />
+            <img src="images/footer-3.png" alt="" />
+          </div>
+          <p>© gadgets zone</p>
+          <p>Powered by zoho commerce</p>
+        </div>
+        <div class="footer-part2">
+          <h3>Follow Us</h3>
+          <div class="footer-icon">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+          </div>
+        </div>
+      </div>
+      <div class="f-main">
+        <div class="footer-part3">
+          <h3>We Accept</h3>
+          <ul>
+            <li>Visa Cards</li>
+            <li>Master Cards</li>
+            <li>Other Cards</li>
+          </ul>
+        </div>
+        <div class="footer-part4">
+          <h3>Newsletter</h3>
+          <input type="email" placeholder="EMAIL" /><br />
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </footer>
+    <div class="foot">
+      <p>
+        We are PCI certified. <span> <button>Accept Now</button> </span>
+      </p>
+    </div>
+  </body>
+</html>
